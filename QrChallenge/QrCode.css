@@ -1,0 +1,82 @@
+:root {
+    --color1: hsl(0, 0%, 100%);
+    --color2:hsl(212, 45%, 89%);
+    --color3:hsl(220, 15%, 55%);
+    --color4:hsl(218, 44%, 22%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+}
+
+body {
+    background-color:var(--color2) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.qr-container {
+    width: 350px;
+    height: 500px;
+    background-color: var(--color1);
+    border-radius: 20px;
+    margin-top: 150px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.qr-image img {
+    width: 90%;
+   border-radius: 15px;
+   margin-top: 15px;
+}
+
+.qr-image {
+    display: flex;
+    justify-content:center ;
+}
+
+.qr-text {
+    text-align: center;
+    margin: 20px;
+}
+
+.qr-text h2 {
+    font-size: 1.5em;
+    margin: 10px 20px;
+    font-weight: 700;
+}
+
+.qr-text p {
+    font-size: 1em;
+    margin: 15px 25px;
+    color: var(--color3);
+    font-weight: 400;
+}
+
+.qr-container:hover {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    transition: all 1s ease-out;
+}
+
+footer p{
+    margin-top: 15px;
+    font-size: 12px;  
+    color: var(--color4);
+}
+    
+
+footer a {
+    font-size: 12px;
+    color: black;
+}
+
+footer a:hover {
+    color: var(--color1);
+    cursor: pointer;
+}
+
